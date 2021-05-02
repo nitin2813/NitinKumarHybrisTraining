@@ -194,4 +194,10 @@
 	<bean id="trainingEmailContext" class="com.hybris.training.facades.process.email.context.TrainingEmailContext" parent="abstractEmailContext" scope="prototype" >
 	</bean>
 
+	<alias name="trainingSearchResultVariantProductPopulator" alias="commerceSearchResultProductPopulator"/>
+	<bean id="trainingSearchResultVariantProductPopulator"
+				 class="com.hybris.training.facades.populators.TrainingSearchResultVariantProductPopulator"
+				 parent="variantCommerceSearchResultProductPopulator">
+</bean>
+
 </beans>

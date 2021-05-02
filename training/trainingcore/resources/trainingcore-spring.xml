@@ -574,4 +574,10 @@
 		<property name="processCodeGenerator" ref="processCodeGenerator"/>
 	</bean>
 
+
+	<bean id="trainingProductReviewCountProvider"
+		  class="com.hybris.training.core.search.solrfacetsearch.provider.impl.TrainingProductReviewCountProvider">
+		<property name="fieldNameProvider" ref="solrFieldNameProvider"/>
+	</bean>
+
 </beans>
