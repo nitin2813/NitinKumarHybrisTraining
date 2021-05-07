@@ -22,7 +22,7 @@
 		<ycommerce:testId code="searchPage_productName_link_${product.code}">
 			<a class="product__list--name" href="${productUrl}">${ycommerce:sanitizeHTML(product.name)}</a>
 		</ycommerce:testId>
-
+      ${product.numberOfReviewsForPLP}
 		<div class="product__list--price-panel">
 			<c:if test="${not empty product.potentialPromotions}">
 				<div class="product__listing--promo">
